@@ -2,7 +2,7 @@ pipeline {
     agent any
     environment {
         IMAGE_NAME = 'kevintif/simple-app'
-        REGISTRY_CREDENTIALS = 'dockerhub-credentials'
+        REGISTRY_CREDENTIALS = 'kevintif'
     }
     stages {
         stage('Checkout') { steps { checkout scm } }
